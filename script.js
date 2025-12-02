@@ -7,7 +7,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
-
 // 3D Tilt on Hover (Certificates)
 document.querySelectorAll('.cert-card').forEach(card => {
   card.addEventListener('mousemove', e => {
@@ -24,7 +23,6 @@ document.querySelectorAll('.cert-card').forEach(card => {
     card.style.transform = `perspective(1000px) scale(1)`;
   });
 });
-
 // Lightbox config
 lightbox.option({
   'resizeDuration': 300,
@@ -32,7 +30,6 @@ lightbox.option({
   'imageFadeDuration': 400,
   'wrapAround': true
 });
-
 // Form Success Message
 const form = document.querySelector('.contact-form');
 if (form) {
@@ -46,3 +43,30 @@ if (form) {
     }, 500);
   });
 }
+// Christmas Popup
+document.addEventListener('DOMContentLoaded', () => {
+  const popup = document.getElementById('christmas-popup');
+  const closeBtn = document.getElementById('close-popup');
+  const snowfall = popup.querySelector('.snowfall');
+  const currentMonth = new Date().getMonth(); // 0 = Jan, 11 = Dec
+
+  if (popup && currentMonth === 11) {
+    popup.style.display = 'flex';
+    snowfall.style.display = 'block'; // Show snowfall only when popup is active
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+      snowfall.style.display = 'none';
+    });
+  }
+
+  // Close on outside click
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+      snowfall.style.display = 'none';
+    }
+  });
+});
