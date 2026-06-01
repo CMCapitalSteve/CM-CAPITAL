@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C|M Capital Members Area</title>
+  <meta name="description" content="C|M Capital member access preview for Academy, Discord, Ebook, and free resources." />
+  <link rel="icon" href="../assets/logo-mark-dark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="portal-body">
+  <header class="portal-shell-header">
+    <a href="../index.html" class="portal-brand" aria-label="Back to C|M Capital home">
+      <img src="../assets/logo-nav.png" alt="C|M Capital">
+    </a>
+    <nav class="portal-topnav" aria-label="Member portal navigation">
+      <a href="#academy">Academy</a>
+      <a href="#ebook">Ebook</a>
+      <a href="#discord">Discord</a>
+      <a href="#free">Free</a>
+    </nav>
+    <a href="../index.html#services" class="portal-upgrade">Upgrade</a>
+  </header>
+
+  <main class="portal-layout">
+    <aside class="portal-sidebar">
+      <p class="portal-label">Preview Mode</p>
+      <h1>Members Area</h1>
+      <p>This is the clean layout we can connect to Whop so each member only sees the areas they own.</p>
+      <div class="portal-role-switcher" aria-label="Preview access level">
+        <button type="button" class="is-selected" data-role="academy">Academy</button>
+        <button type="button" data-role="ebook">Ebook</button>
+        <button type="button" data-role="discord">Discord</button>
+        <button type="button" data-role="free">Free</button>
+      </div>
+      <div class="portal-access-list">
+        <a href="#academy">Academy Course</a>
+        <a href="#ebook">Ebook Reader</a>
+        <a href="#discord">Discord Resources</a>
+        <a href="#free">Starter Access</a>
+      </div>
+    </aside>
+
+    <section class="portal-main">
+      <section class="portal-hero-card">
+        <div>
+          <span class="section-kicker">Member hub</span>
+          <h2>Your trading workspace.</h2>
+          <p>Course videos, ebook access, community resources, and market breakdowns in one simple place.</p>
+        </div>
+        <div class="portal-status">
+          <span>Whop ready</span>
+          <strong id="portal-access-label">Academy access preview</strong>
+        </div>
+      </section>
+
+      <section id="academy" class="portal-section" data-access="academy">
+        <div class="portal-section-head">
+          <span class="portal-tag">Academy</span>
+          <h2>Course Library</h2>
+          <p>For Academy members. This is where your private course videos and recaps would sit.</p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card"><span>Module 01</span><h3>Foundation</h3><p>Market structure, routine, risk, and setup rules.</p><div class="video-slot">Video Embed</div></article>
+          <article class="lesson-card"><span>Module 02</span><h3>Strategy</h3><p>Swing and day-trading framework with clean execution steps.</p><div class="video-slot">Video Embed</div></article>
+          <article class="lesson-card"><span>Module 03</span><h3>Recaps</h3><p>Trade breakdowns, mistakes, wins, and live-session follow-ups.</p><div class="video-slot">Video Embed</div></article>
+        </div>
+      </section>
+
+      <section id="ebook" class="portal-section" data-access="academy ebook">
+        <div class="portal-section-head">
+          <span class="portal-tag">Ebook</span>
+          <h2>Ebook Reader</h2>
+          <p>Included for Academy members, or unlocked separately for £20. Later this can become a protected online reader rather than a downloadable PDF.</p>
+        </div>
+        <div class="reader-preview">
+          <div class="ebook-preview-cover">
+            <img src="../assets/ebook-cover.png" alt="C|M Strategy Ebook cover">
+          </div>
+          <div class="reader-page">
+            <span class="reader-watermark">Member preview | Whop access required</span>
+            <span>C|M Strategy Ebook</span>
+            <h3>Chapter 01</h3>
+            <p>Build a repeatable trading process before you ever think about scaling capital.</p>
+          </div>
+          <div class="reader-controls">
+            <button type="button">Previous</button>
+            <button type="button">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="discord" class="portal-section" data-access="academy discord">
+        <div class="portal-section-head">
+          <span class="portal-tag">Discord</span>
+          <h2>Discord Community</h2>
+          <p>Trading journal, weekly breakdowns, mentor charts, trade ideas, broker resources, and market notes live inside the dedicated Discord channels.</p>
+        </div>
+        <div class="discord-open-card">
+          <div>
+            <span>Community Access</span>
+            <h3>Open Discord</h3>
+            <p>Use Discord as the home for community resources and live updates.</p>
+          </div>
+          <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" target="_blank" rel="noopener">Open Discord</a>
+        </div>
+      </section>
+
+      <section id="free" class="portal-section" data-access="academy ebook discord free">
+        <div class="portal-section-head">
+          <span class="portal-tag">Free</span>
+          <h2>Starter Access</h2>
+          <p>For free members. A simple area for starter links and community entry points.</p>
+        </div>
+        <div class="resource-list">
+          <a href="https://whop.com/checkout/plan_aQADfPZUcDxqJ" target="_blank" rel="noopener">Join Free Discord</a>
+          <a href="../index.html#services">View Paid Access</a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

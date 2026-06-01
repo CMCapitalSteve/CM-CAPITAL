@@ -5,143 +5,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>C|M Capital - Trading Made Simple</title>
   <meta name="description" content="£1.2M+ funded. 9+ years mastery. Join the 1%." />
-  <!-- Open Graph -->
   <meta property="og:title" content="C|M Capital - Trading Made Simple" />
   <meta property="og:description" content="Live mentorship. Funded accounts. Real results." />
-  <meta property="og:image" content="https://static.wixstatic.com/media/12b4e4_751fdc05f7714161b93ce2700e6ad4f7~mv2.png" />
+  <meta property="og:image" content="assets/logo-stacked-dark.png" />
   <meta property="og:url" content="https://cmcapital.co" />
-  <!-- Favicon -->
-  <link rel="icon" href="https://static.wixstatic.com/media/12b4e4_d2273b99836642ce99d73f5ccbe21df5~mv2.png" />
-  <!-- Fonts -->
+  <link rel="icon" href="assets/logo-mark-dark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Lightbox -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- jQuery for Lightbox -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container nav-content">
-      <div class="logo">
-        <img src="https://static.wixstatic.com/media/12b4e4_d2273b99836642ce99d73f5ccbe21df5~mv2.png" alt="C|M Capital" class="logo-img">
-      </div>
+      <a class="logo" href="#hero" aria-label="C|M Capital home">
+        <img src="assets/logo-nav.png" alt="C|M Capital" class="logo-img">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#proof">Proof</a></li>
+        <li><a href="#proof">Results</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#members">Members</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li class="nav-mobile-action"><a href="members/index.html">Log In</a></li>
+        <li class="nav-mobile-action"><a href="#services">Sign Up</a></li>
       </ul>
-      <a href="#services" class="nav-btn">Get Started</a>
+      <div class="nav-actions">
+        <a href="members/index.html" class="login-btn">Log In</a>
+        <a href="#services" class="nav-btn">Sign Up</a>
+      </div>
     </div>
   </nav>
 
-  <!-- HERO -->
   <section id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-grid">
       <div class="hero-left">
+        <span class="eyebrow">C|M Capital Trading Education</span>
         <h1>Trading <span class="gradient-text">Made Simple.</span></h1>
-        <p>9+ years. £1.2M+ funded. Join the 1%.</p>
-        <a href="#services" class="btn-primary">View Pricing</a>
+        <p>Build a cleaner process for the markets with live mentorship, funded-account guidance, and a strategy designed to make trading feel less chaotic.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary">Sign Up</a>
+          <a href="members/index.html" class="btn-secondary">Member Login</a>
+        </div>
         <div class="hero-trust">
-          <p><strong>£1.2M+ funded</strong> · <strong>9+ years</strong> · <strong>100+ traders funded</strong></p>
+          <strong>£1.2M+ funded</strong>
+          <strong>9+ years</strong>
+          <strong>Live mentorship</strong>
         </div>
       </div>
       <div class="hero-right">
-        <div class="hero-cert">
-          <img src="https://static.wixstatic.com/media/12b4e4_e1417896304c4956a970305b742f949b~mv2.jpg" alt="FTMO Verification">
+        <div class="hero-terminal">
+          <div class="terminal-top">
+            <img src="assets/logo-terminal.png" alt="C|M Capital" class="terminal-logo">
+            <span>Member Access</span>
+          </div>
+          <div class="access-panel">
+            <div class="access-row is-active">
+              <span>Academy</span>
+              <strong>Course + Discord + Resources</strong>
+            </div>
+            <div class="access-row">
+              <span>Discord</span>
+              <strong>Community + Market Breakdowns</strong>
+            </div>
+            <div class="access-row">
+              <span>Ebook</span>
+              <strong>Included with Academy | £20 standalone</strong>
+            </div>
+            <div class="access-row">
+              <span>Free</span>
+              <strong>Starter Community</strong>
+            </div>
+          </div>
+          <div class="chart-panel portal-chart" aria-hidden="true">
+            <span style="height: 28%"></span>
+            <span style="height: 46%"></span>
+            <span style="height: 35%"></span>
+            <span style="height: 62%"></span>
+            <span style="height: 54%"></span>
+            <span style="height: 78%"></span>
+            <span style="height: 68%"></span>
+            <span style="height: 88%"></span>
+          </div>
+          <div class="terminal-footer">
+            <span>Risk-first education</span>
+            <span>Live breakdowns</span>
+          </div>
         </div>
-        <div class="hero-logo">
-          <img src="https://static.wixstatic.com/media/12b4e4_44670c0340fc4a799f0ab789c70c0625~mv2.png" alt="C|M Capital">
-        </div>
+        <img src="assets/logo-mark-dark.png" alt="" class="hero-watermark" aria-hidden="true">
       </div>
     </div>
   </section>
 
-  <!-- PROOF -->
+  <section class="signal-strip" aria-label="C|M Capital trading education highlights">
+    <div class="container signal-grid">
+      <div><span>01</span><strong>Learn the full strategy</strong></div>
+      <div><span>02</span><strong>Join live market sessions</strong></div>
+      <div><span>03</span><strong>Build a funded-trader routine</strong></div>
+    </div>
+  </section>
+
   <section id="proof" class="proof">
     <div class="container">
+      <span class="section-kicker">Verified progress</span>
       <h2 class="section-title">£1.2M+ Funded. Real Achievements.</h2>
       <p class="proof-subtitle">Real Members, Real Achievements.</p>
       <div class="certificates-grid">
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_e1417896304c4956a970305b742f949b~mv2.jpg" alt="FTMO Verification">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_af89cdf33e094489925b03c1c34840d3~mv2.jpg" alt="FTMO Challenge">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_b491c14f92e9499aa1f7ddf13540d034~mv2.png" alt="Alpha">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_dbfcf0c37f68417fbc602f39824dcedd~mv2.png" alt="E8">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_911b5778fcf64243b6e887a0fd3acbe9~mv2.jpg" alt="Skilled">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_2cb5f54d4d69474cb97d117338f6e626~mv2.jpg" alt="ThinkCapital Funded">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_65e0b459e53a41cd99a634537b96ced6~mv2.png" alt="Skilled Phase 2">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_06692466dd7548918edb45f351cd4873~mv2.jpg" alt="Topstep Funded">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_3f2abed88b6144588541aa51b0d57181~mv2.jpg" alt="Alpha Profit Split">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_bcabf772ca8643dc823edd0024297e35~mv2.jpg" alt="Alpha Funded Trader">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_582b4f75664f4051b3f0eda8b9ce3d25~mv2.jpg" alt="Royal Challenge Funded">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_2be69b20c9bc46779ba161b82480376c~mv2.jpg" alt="Equity Edge Evaluation">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_3b68e37e5990472d8f9543b2bd538611~mv2.jpg" alt="Funded Trader $25K">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_d21b482038c84461b9a18f4f8c573eab~mv2.png" alt="QT Funded $100K">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_6346a190fcfa47949b066a9511353f56~mv2.jpg" alt="Funded Trader Proof">
-          <div class="cert-glow"></div>
-        </div>
-        <div class="cert-card" data-lightbox="proof">
-          <img src="https://static.wixstatic.com/media/12b4e4_2991ce1c50b240f79df9163320932eb6~mv2.jpg" alt="Funded Account Proof">
-          <div class="cert-glow"></div>
-        </div>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_e1417896304c4956a970305b742f949b~mv2.jpg" data-lightbox="proof" data-title="FTMO Verification"><img src="https://static.wixstatic.com/media/12b4e4_e1417896304c4956a970305b742f949b~mv2.jpg" alt="FTMO Verification"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_af89cdf33e094489925b03c1c34840d3~mv2.jpg" data-lightbox="proof" data-title="FTMO Challenge"><img src="https://static.wixstatic.com/media/12b4e4_af89cdf33e094489925b03c1c34840d3~mv2.jpg" alt="FTMO Challenge"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_b491c14f92e9499aa1f7ddf13540d034~mv2.png" data-lightbox="proof" data-title="Alpha"><img src="https://static.wixstatic.com/media/12b4e4_b491c14f92e9499aa1f7ddf13540d034~mv2.png" alt="Alpha"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_dbfcf0c37f68417fbc602f39824dcedd~mv2.png" data-lightbox="proof" data-title="E8"><img src="https://static.wixstatic.com/media/12b4e4_dbfcf0c37f68417fbc602f39824dcedd~mv2.png" alt="E8"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_911b5778fcf64243b6e887a0fd3acbe9~mv2.jpg" data-lightbox="proof" data-title="Skilled"><img src="https://static.wixstatic.com/media/12b4e4_911b5778fcf64243b6e887a0fd3acbe9~mv2.jpg" alt="Skilled"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_2cb5f54d4d69474cb97d117338f6e626~mv2.jpg" data-lightbox="proof" data-title="ThinkCapital Funded"><img src="https://static.wixstatic.com/media/12b4e4_2cb5f54d4d69474cb97d117338f6e626~mv2.jpg" alt="ThinkCapital Funded"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_65e0b459e53a41cd99a634537b96ced6~mv2.png" data-lightbox="proof" data-title="Skilled Phase 2"><img src="https://static.wixstatic.com/media/12b4e4_65e0b459e53a41cd99a634537b96ced6~mv2.png" alt="Skilled Phase 2"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_06692466dd7548918edb45f351cd4873~mv2.jpg" data-lightbox="proof" data-title="Topstep Funded"><img src="https://static.wixstatic.com/media/12b4e4_06692466dd7548918edb45f351cd4873~mv2.jpg" alt="Topstep Funded"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_3f2abed88b6144588541aa51b0d57181~mv2.jpg" data-lightbox="proof" data-title="Alpha Profit Split"><img src="https://static.wixstatic.com/media/12b4e4_3f2abed88b6144588541aa51b0d57181~mv2.jpg" alt="Alpha Profit Split"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_bcabf772ca8643dc823edd0024297e35~mv2.jpg" data-lightbox="proof" data-title="Alpha Funded Trader"><img src="https://static.wixstatic.com/media/12b4e4_bcabf772ca8643dc823edd0024297e35~mv2.jpg" alt="Alpha Funded Trader"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_582b4f75664f4051b3f0eda8b9ce3d25~mv2.jpg" data-lightbox="proof" data-title="Royal Challenge Funded"><img src="https://static.wixstatic.com/media/12b4e4_582b4f75664f4051b3f0eda8b9ce3d25~mv2.jpg" alt="Royal Challenge Funded"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_2be69b20c9bc46779ba161b82480376c~mv2.jpg" data-lightbox="proof" data-title="Equity Edge Evaluation"><img src="https://static.wixstatic.com/media/12b4e4_2be69b20c9bc46779ba161b82480376c~mv2.jpg" alt="Equity Edge Evaluation"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_3b68e37e5990472d8f9543b2bd538611~mv2.jpg" data-lightbox="proof" data-title="Funded Trader $25K"><img src="https://static.wixstatic.com/media/12b4e4_3b68e37e5990472d8f9543b2bd538611~mv2.jpg" alt="Funded Trader $25K"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_d21b482038c84461b9a18f4f8c573eab~mv2.png" data-lightbox="proof" data-title="QT Funded $100K"><img src="https://static.wixstatic.com/media/12b4e4_d21b482038c84461b9a18f4f8c573eab~mv2.png" alt="QT Funded $100K"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_6346a190fcfa47949b066a9511353f56~mv2.jpg" data-lightbox="proof" data-title="Funded Trader Proof"><img src="https://static.wixstatic.com/media/12b4e4_6346a190fcfa47949b066a9511353f56~mv2.jpg" alt="Funded Trader Proof"><span class="cert-glow"></span></a>
+        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_2991ce1c50b240f79df9163320932eb6~mv2.jpg" data-lightbox="proof" data-title="Funded Account Proof"><img src="https://static.wixstatic.com/media/12b4e4_2991ce1c50b240f79df9163320932eb6~mv2.jpg" alt="Funded Account Proof"><span class="cert-glow"></span></a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="about">
     <div class="container about-grid">
       <div class="about-text">
+        <span class="section-kicker">The edge</span>
         <h3>C|M Capital</h3>
         <h4>Where Trading Meets A Simplified Edge.</h4>
         <p>Founded by <strong>Steve Cutmore</strong> — <strong>9+ years mastering markets</strong>. Now teaching traders to get <strong>funded</strong>.</p>
@@ -150,214 +151,161 @@
         <p>We pride ourselves on our <strong>innovative approach</strong>: combining <strong>cutting-edge strategies</strong> with <strong>hands-on mentorship</strong> to give you the tools to dominate the markets.</p>
         <p class="about-cta">Join us at C|M Capital and <strong>start your journey to trading excellence today</strong>.</p>
         <div class="social-icons">
-          <a href="https://x.com/LordCutmore" target="_blank" aria-label="X (Twitter)" class="social-link">
-            <i class="fab fa-x-twitter"></i>
-          </a>
-          <a href="https://www.youtube.com/@CMCapitalSteve" target="_blank" aria-label="YouTube - C|M Capital" class="social-link">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://www.youtube.com/@SteveCutmore" target="_blank" aria-label="YouTube - Steve Cutmore" class="social-link">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://www.instagram.com/cm_capital1/" target="_blank" aria-label="Instagram" class="social-link">
-            <i class="fab fa-instagram"></i>
-          </a>
+          <a href="https://x.com/LordCutmore" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/@CMCapitalSteve" target="_blank" rel="noopener" aria-label="YouTube - C|M Capital" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.youtube.com/@SteveCutmore" target="_blank" rel="noopener" aria-label="YouTube - Steve Cutmore" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/cm_capital1/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="about-img">
-        <img src="https://static.wixstatic.com/media/12b4e4_751fdc05f7714161b93ce2700e6ad4f7~mv2.png" alt="C|M Logo">
+        <img src="assets/logo-stacked-dark.png" alt="C|M Logo">
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
   <section id="services" class="services">
     <div class="container">
+      <span class="section-kicker">Your next move</span>
       <h2 class="section-title">Choose Your Path</h2>
+      <p class="section-intro">Every product leads into the same clean member system. Whop handles the purchase, your access level decides what opens inside.</p>
       <div class="services-grid">
-
-        <!-- ACADEMY -->
         <div class="service-card">
-          <div class="card-icon-circle">
-            <img src="https://static.wixstatic.com/media/12b4e4_d2369c2d73ae47ee8c82baf05413bcec~mv2.jpg" alt="Academy" class="card-icon-img">
-          </div>
+          <div class="card-icon-circle"><img src="https://static.wixstatic.com/media/12b4e4_d2369c2d73ae47ee8c82baf05413bcec~mv2.jpg" alt="Academy" class="card-icon-img"></div>
           <h3>Academy</h3>
           <ul class="service-list">
-            <li>Full Strategy | Swing & Day Trading</li>
-            <li>Live Webinars</li>
-            <li>Lifetime Access To Discord Community</li>
-            <li>24/7 Support</li>
-            <li>C|M Team Resources</li>
-            <li>Private Academy & Crypto Community</li>
-            <li>Traders Recap Videos</li>
+            <li>Full Strategy | Swing & Day Trading</li><li>Live Webinars</li><li>Lifetime Access To Discord Community</li><li>24/7 Support</li><li>C|M Team Resources</li><li>Private Academy & Crypto Community</li><li>Traders Recap Videos</li>
           </ul>
-          <a href="https://whop.com/checkout/1wsZYxfIgPrjokoErn-uOrv-uCW8-36NF-6nrLn2j141j3/" class="btn-card" target="_blank">Join Academy £500</a>
-          <div class="price-box">
-            <p class="price-sub">One-Time Fee</p>
-          </div>
+          <a href="https://whop.com/checkout/plan_ubTXAZqwcYjle" class="btn-card" target="_blank" rel="noopener">Join Academy £500</a>
+          <div class="price-box"><p class="price-sub">One-Time Fee</p></div>
           <span class="lifetime-badge">LIFETIME ACCESS</span>
         </div>
-
-        <!-- PAID DISCORD -->
+        <div class="service-card ebook-card">
+          <span class="badge badge-ebook">Included In Academy</span>
+          <div class="ebook-cover-wrap"><span class="ebook-shine" aria-hidden="true"></span><img src="assets/ebook-cover.png" alt="CM Capital Strategy Ebook cover"></div>
+          <h3>Strategy Ebook</h3>
+          <ul class="service-list">
+            <li>C|M Strategy Ebook</li><li>Included for Academy members</li><li>£20 lifetime access</li><li>Member-area reader access</li>
+          </ul>
+          <a href="https://whop.com/checkout/plan_Tot7zhkOdHlPX" class="btn-card" target="_blank" rel="noopener" data-whop-product="ebook">Buy Ebook £20</a>
+          <div class="price-box"><p class="price-sub">Academy Members Get This Included</p></div>
+        </div>
         <div class="service-card best-seller">
-          <div class="card-icon-circle">
-            <img src="https://static.wixstatic.com/media/12b4e4_b20c8b9b5b5c4fd4a138de349d25d3da~mv2.png" alt="Discord" class="card-icon-img">
-          </div>
           <span class="badge">Most Popular</span>
+          <div class="card-icon-circle"><img src="https://static.wixstatic.com/media/12b4e4_b20c8b9b5b5c4fd4a138de349d25d3da~mv2.png" alt="Discord" class="card-icon-img"></div>
           <h3>Discord Community</h3>
           <ul class="service-list">
-            <li>Weekly Market Breakdowns & Updates</li>
-            <li>Community Trade Ideas</li>
-            <li>Accountability (Wins & Loss Channels)</li>
-            <li>Live Mentors Charts & Updates</li>
-            <li>A FREE Trading Journal</li>
-            <li>Full C|M Community Chat</li>
+            <li>Weekly Market Breakdowns & Updates</li><li>Community Trade Ideas</li><li>Accountability (Wins & Loss Channels)</li><li>Live Mentors Charts & Updates</li><li>A FREE Trading Journal</li><li>Full C|M Community Chat</li>
           </ul>
-          <a href="https://whop.com/checkout/43GmjGqvayAFPvfwd3-3GAn-VuZX-NSmD-OVthFl03P5vk/" class="btn-card" target="_blank">Join Discord £15/mo</a>
+          <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" class="btn-card" target="_blank" rel="noopener">Join Discord £15/mo</a>
         </div>
-
-        <!-- FREE COMMUNITY -->
         <div class="service-card">
-          <span class="badge" style="background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);">FREE</span>
-          <div class="card-icon-circle">
-            <img src="https://static.wixstatic.com/media/12b4e4_b20c8b9b5b5c4fd4a138de349d25d3da~mv2.png" alt="Free Community" class="card-icon-img">
-          </div>
+          <span class="badge badge-free">FREE</span>
+          <div class="card-icon-circle"><img src="https://static.wixstatic.com/media/12b4e4_b20c8b9b5b5c4fd4a138de349d25d3da~mv2.png" alt="Free Community" class="card-icon-img"></div>
           <h3>Free Community</h3>
           <ul class="service-list">
-            <li>General Chat</li>
-            <li>Profits & Losses Sharing</li>
-            <li>Trade Ideas Channel</li>
-            <li>Economic Calendar</li>
-            <li>Recommended Brokers</li>
-            <li>Prop Firms List</li>
-            <li>Exclusive Prop Firm Discounts</li>
-            <li>Mentor Charts</li>
+            <li>General Chat</li><li>Profits & Losses Sharing</li><li>Trade Ideas Channel</li><li>Economic Calendar</li><li>Recommended Brokers</li><li>Prop Firms List</li><li>Exclusive Prop Firm Discounts</li><li>Mentor Charts</li>
           </ul>
-          <a href="https://whop.com/c-m-capital/c-m-free-community-discord/" class="btn-card" target="_blank">Join Free Discord</a>
-          <div class="price-box">
-            <p class="price-sub">Free Forever</p>
-          </div>
+          <a href="https://whop.com/checkout/plan_aQADfPZUcDxqJ" class="btn-card" target="_blank" rel="noopener">Join Free Discord</a>
+          <div class="price-box"><p class="price-sub">Free Forever</p></div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- REVIEWS SLIDER -->
+  <section id="members" class="members">
+    <div class="container">
+      <div class="members-head">
+        <div>
+          <span class="section-kicker">Members area</span>
+          <h2 class="section-title">One Login. The Right Access.</h2>
+        </div>
+        <div class="members-copy">
+          <p>Members log in through Whop. Academy members get the ebook included, while non-Academy buyers can unlock the ebook reader for £20.</p>
+          <div class="members-actions">
+            <a href="members/index.html" class="btn-primary">Member Login</a>
+            <a href="#services" class="btn-secondary">Choose Access</a>
+          </div>
+        </div>
+      </div>
+      <div class="access-steps">
+        <article><span>01</span><h3>Buy Through Whop</h3><p>Your existing Whop products stay in charge of payments, Discord access, and customer records.</p></article>
+        <article><span>02</span><h3>Log Into Members</h3><p>The website member area becomes the clean home for course videos, ebook access, and resources.</p></article>
+        <article><span>03</span><h3>Show The Right Content</h3><p>Academy, ebook, paid Discord, and free members each see only the areas linked to their access.</p></article>
+      </div>
+      <div class="portal-grid">
+        <article class="portal-card">
+          <span class="portal-tag">Ebook</span>
+          <h3>Ebook Reader</h3>
+          <p>Included for Academy members, or unlocked separately for £20. Built for viewing inside the member area rather than handing out a raw file.</p>
+        </article>
+        <article class="portal-card">
+          <span class="portal-tag">Academy</span>
+          <h3>Course Library</h3>
+          <p>Structured lesson areas for Academy members, with course videos, recaps, and resources in one clean place.</p>
+        </article>
+        <article class="portal-card">
+          <span class="portal-tag">Discord</span>
+          <h3>Discord Community</h3>
+          <p>Community resources stay inside Discord. Members use the portal to open the right Whop-managed Discord access.</p>
+        </article>
+        <article class="portal-card">
+          <span class="portal-tag">Free</span>
+          <h3>Starter Access</h3>
+          <p>Free members get the basic community entry points without seeing the paid Academy or ebook areas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container faq-grid">
+      <div>
+        <span class="section-kicker">Quick answers</span>
+        <h2 class="section-title">Before You Join</h2>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>Is the ebook included with Academy?</summary>
+          <p>Yes. Academy members get the Strategy Ebook included. Non-Academy members can buy standalone access for £20.</p>
+        </details>
+        <details>
+          <summary>Where do members log in?</summary>
+          <p>The site is set up for a Whop-powered member login. The preview page is live locally now; the final login URL gets swapped in once the backend is ready.</p>
+        </details>
+        <details>
+          <summary>Can course videos be watched on the site?</summary>
+          <p>Yes. The member area is designed for embedded course lessons. We can use YouTube unlisted embeds short-term, then upgrade to Vimeo, Bunny, or VdoCipher later.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section id="reviews" class="reviews">
     <div class="container">
+      <span class="section-kicker">Trader feedback</span>
       <h2 class="section-title">What Our Traders Say</h2>
+    </div>
+    <div class="reviews-track" aria-label="Trader reviews">
       <div class="reviews-slider">
-
-        <!-- Review 1 - Dal -->
-        <div class="review-card">
-          <div class="review-text">
-            "After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."
-          </div>
-          <div class="review-author">- Dal</div>
-        </div>
-        <!-- Review 2 - Leahey -->
-        <div class="review-card">
-          <div class="review-text">
-            "I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"
-          </div>
-          <div class="review-author">- Leahy</div>
-        </div>
-        <!-- Review 3 - Mo -->
-        <div class="review-card">
-          <div class="review-text">
-            "Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."
-          </div>
-          <div class="review-author">- Mo</div>
-        </div>
-
-        <!-- Review 4 - JP -->
-        <div class="review-card">
-          <div class="review-text">
-            "I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."
-          </div>
-          <div class="review-author">- JP</div>
-        </div>
-
-        <!-- Review 5 - Jonathon -->
-        <div class="review-card">
-          <div class="review-text">
-            "I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"
-          </div>
-          <div class="review-author">- Jonathon</div>
-        </div>
-
-        <!-- === Duplicates (3 full sets for seamless loop) === -->
-
-        <!-- Set 2 -->
-        <div class="review-card">
-          <div class="review-text">
-            "After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."
-          </div>
-          <div class="review-author">- Dal</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"
-          </div>
-          <div class="review-author">- Leahy</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."
-          </div>
-          <div class="review-author">- Mo</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."
-          </div>
-          <div class="review-author">- JP</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"
-          </div>
-          <div class="review-author">- Jonathon</div>
-        </div>
-
-        <!-- Set 3 -->
-        <div class="review-card">
-          <div class="review-text">
-            "After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."
-          </div>
-          <div class="review-author">- Dal</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"
-          </div>
-          <div class="review-author">- Leahy</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."
-          </div>
-          <div class="review-author">- Mo</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."
-          </div>
-          <div class="review-author">- JP</div>
-        </div>
-        <div class="review-card">
-          <div class="review-text">
-            "I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"
-          </div>
-          <div class="review-author">- Jonathon</div>
-        </div>
-
+        <article class="review-card"><p class="review-text">"After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."</p><p class="review-author">- Dal</p></article>
+        <article class="review-card"><p class="review-text">"I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"</p><p class="review-author">- Leahy</p></article>
+        <article class="review-card"><p class="review-text">"Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."</p><p class="review-author">- Mo</p></article>
+        <article class="review-card"><p class="review-text">"I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."</p><p class="review-author">- JP</p></article>
+        <article class="review-card"><p class="review-text">"I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"</p><p class="review-author">- Jonathon</p></article>
+        <article class="review-card"><p class="review-text">"After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."</p><p class="review-author">- Dal</p></article>
+        <article class="review-card"><p class="review-text">"I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"</p><p class="review-author">- Leahy</p></article>
+        <article class="review-card"><p class="review-text">"Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."</p><p class="review-author">- Mo</p></article>
+        <article class="review-card"><p class="review-text">"I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."</p><p class="review-author">- JP</p></article>
+        <article class="review-card"><p class="review-text">"I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"</p><p class="review-author">- Jonathon</p></article>
+        <article class="review-card"><p class="review-text">"After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."</p><p class="review-author">- Dal</p></article>
+        <article class="review-card"><p class="review-text">"I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"</p><p class="review-author">- Leahy</p></article>
+        <article class="review-card"><p class="review-text">"Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."</p><p class="review-author">- Mo</p></article>
+        <article class="review-card"><p class="review-text">"I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."</p><p class="review-author">- JP</p></article>
+        <article class="review-card"><p class="review-text">"I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"</p><p class="review-author">- Jonathon</p></article>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section id="contact" class="contact">
     <div class="container contact-grid">
       <form class="contact-form" action="https://formspree.io/f/mgvpndok" method="POST">
@@ -373,6 +321,7 @@
         <p>Message Sent! We’ll reply within 24 hours.</p>
       </div>
       <div class="contact-text">
+        <span class="section-kicker">Start here</span>
         <h2>Get in Touch</h2>
         <p>One message. One step closer to funded.</p>
       </div>
@@ -387,21 +336,25 @@
       </div>
       <div class="footer-right">
         <div class="trust-seal">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="border-radius:50%; background:#10b981; padding:6px;">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="white"/>
           </svg>
-          <span>100% Satisfaction Guarantee</span>
+          <span>Access managed via Whop</span>
         </div>
         <div class="footer-links">
           <a href="#about">About</a>
           <a href="#services">Services</a>
+          <a href="#members">Members</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
+    <div class="container footer-disclaimer">
+      <p>C|M Capital provides trading education only. Nothing on this website is financial advice, investment advice, or a guarantee of results. Trading involves risk and you should only trade with money you can afford to lose.</p>
+    </div>
   </footer>
 
-  <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script src="script.js"></script>
 </body>
