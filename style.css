@@ -1167,6 +1167,9 @@ footer {
   gap: 0.5rem;
   margin-top: 1.4rem;
 }
+.portal-role-switcher[hidden] {
+  display: none;
+}
 .portal-role-switcher button {
   min-height: 42px;
   border: 1px solid rgba(255,255,255,0.12);

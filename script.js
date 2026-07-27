@@ -101,6 +101,8 @@ const roleLabels = {
   free: 'Free member access preview'
 };
 
+const query = new URLSearchParams(window.location.search);
+
 function setPortalRole(role) {
   if (!roleButtons.length || !accessSections.length) return;
   roleButtons.forEach(button => button.classList.toggle('is-selected', button.dataset.role === role));
@@ -145,6 +147,14 @@ async function hydrateMemberPortal() {
   }
 
   lockAllPortalSections('Checking Whop access...');
+
+  if (query.get('auth') === 'failed') {
+    if (portalStatusKicker) portalStatusKicker.textContent = 'Login failed';
+    if (portalHeroCopy) portalHeroCopy.textContent = `Whop sent you back, but the session was not created. ${query.get('reason') || 'Please try logging in again.'}`;
+    if (portalAuthActions) portalAuthActions.hidden = false;
+    lockAllPortalSections('Whop login needs another try.');
+    return;
+  }
 
   try {
     const response = await fetch('/api/member/status', { credentials: 'include' });

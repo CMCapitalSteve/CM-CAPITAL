@@ -93,9 +93,12 @@ function setJson(res, status, data) {
 async function exchangeToken(body) {
   const payload = {
     client_id: process.env.WHOP_CLIENT_ID,
-    client_secret: process.env.WHOP_CLIENT_SECRET,
     ...body
   };
+
+  if (process.env.WHOP_USE_CLIENT_SECRET === "true") {
+    payload.client_secret = process.env.WHOP_CLIENT_SECRET;
+  }
 
   const response = await fetch(`${WHOP_API_BASE}/oauth/token`, {
     method: "POST",
