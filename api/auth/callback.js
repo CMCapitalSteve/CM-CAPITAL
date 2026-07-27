@@ -3,6 +3,7 @@ const {
   SESSION_COOKIE,
   redirectUri,
   decodeSignedCookie,
+  encodeSignedCookie,
   parseCookies,
   cookie,
   clearCookie,
