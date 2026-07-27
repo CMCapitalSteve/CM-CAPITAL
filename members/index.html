@@ -22,15 +22,16 @@
       <a href="#discord">Discord</a>
       <a href="#free">Free</a>
     </nav>
-    <a href="../index.html#services" class="portal-upgrade">Upgrade</a>
+    <a href="/api/auth/logout" class="portal-upgrade" id="portal-logout-link" hidden>Log Out</a>
+    <a href="/api/auth/login" class="portal-upgrade" id="portal-login-link">Log In</a>
   </header>
 
   <main class="portal-layout">
     <aside class="portal-sidebar">
-      <p class="portal-label">Preview Mode</p>
+      <p class="portal-label">Whop Access</p>
       <h1>Members Area</h1>
-      <p>This is the clean layout we can connect to Whop so each member only sees the areas they own.</p>
-      <div class="portal-role-switcher" aria-label="Preview access level">
+      <p id="portal-sidebar-copy">Sign in through Whop and this page will open the areas linked to your product access.</p>
+      <div class="portal-role-switcher" aria-label="Preview access level" hidden>
         <button type="button" class="is-selected" data-role="academy">Academy</button>
         <button type="button" data-role="ebook">Ebook</button>
         <button type="button" data-role="discord">Discord</button>
@@ -49,11 +50,15 @@
         <div>
           <span class="section-kicker">Member hub</span>
           <h2>Your trading workspace.</h2>
-          <p>Course videos, ebook access, community resources, and market breakdowns in one simple place.</p>
+          <p id="portal-hero-copy">Checking your Whop access so the right member areas can open.</p>
+          <div class="portal-auth-actions" id="portal-auth-actions" hidden>
+            <a href="/api/auth/login" class="btn-primary">Log In With Whop</a>
+            <a href="../index.html#services" class="btn-secondary">Choose Access</a>
+          </div>
         </div>
         <div class="portal-status">
-          <span>Whop ready</span>
-          <strong id="portal-access-label">Academy access preview</strong>
+          <span id="portal-status-kicker">Checking</span>
+          <strong id="portal-access-label">Loading member access...</strong>
         </div>
       </section>
 
@@ -81,7 +86,7 @@
             <img src="../assets/ebook-cover.png" alt="C|M Strategy Ebook cover">
           </div>
           <div class="reader-page">
-            <span class="reader-watermark">Member preview | Whop access required</span>
+            <span class="reader-watermark" id="reader-watermark">Whop access required</span>
             <span>C|M Strategy Ebook</span>
             <h3>Chapter 01</h3>
             <p>Build a repeatable trading process before you ever think about scaling capital.</p>
@@ -105,7 +110,7 @@
             <h3>Open Discord</h3>
             <p>Use Discord as the home for community resources and live updates.</p>
           </div>
-          <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" target="_blank" rel="noopener">Open Discord</a>
+          <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" target="_blank" rel="noopener" id="discord-access-link">Open Discord</a>
         </div>
       </section>
 

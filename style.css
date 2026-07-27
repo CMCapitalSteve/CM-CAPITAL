@@ -1217,6 +1217,16 @@ footer {
   line-height: 0.95;
 }
 .portal-hero-card p { max-width: 640px; color: var(--soft-ink); font-size: 1.08rem; }
+.portal-auth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.portal-auth-actions[hidden],
+.portal-upgrade[hidden] {
+  display: none;
+}
 .portal-status {
   min-width: 260px;
   padding: 1rem;
@@ -1242,7 +1252,7 @@ footer {
   filter: grayscale(0.45);
 }
 .portal-section.is-locked::after {
-  content: "Locked for this preview access level";
+  content: "Locked by Whop access";
   display: inline-flex;
   margin-top: 1rem;
   padding: 0.55rem 0.8rem;
