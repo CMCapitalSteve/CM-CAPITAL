@@ -9,7 +9,7 @@ const PRODUCTS = {
   academy: process.env.WHOP_PRODUCT_ACADEMY || "prod_6uCRaYVbbZGDo",
   paidDiscord: process.env.WHOP_PRODUCT_PAID_DISCORD || "prod_iBe8QfjjJFpPI",
   free: process.env.WHOP_PRODUCT_FREE || "prod_so7e07Zy82gMy",
-  ebook: process.env.WHOP_PRODUCT_EBOOK || ""
+  ebook: process.env.WHOP_PRODUCT_EBOOK || "prod_t64zSMfZm0SUB"
 };
 
 function appUrl() {
@@ -96,7 +96,7 @@ async function exchangeToken(body) {
     ...body
   };
 
-  if (process.env.WHOP_USE_CLIENT_SECRET === "true") {
+  if (process.env.WHOP_CLIENT_SECRET && process.env.WHOP_USE_CLIENT_SECRET !== "false") {
     payload.client_secret = process.env.WHOP_CLIENT_SECRET;
   }
 
