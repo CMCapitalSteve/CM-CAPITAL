@@ -2,360 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>C|M Capital - Trading Made Simple</title>
-  <meta name="description" content="£1.2M+ funded. 9+ years mastery. Join the 1%." />
-  <meta property="og:title" content="C|M Capital - Trading Made Simple" />
-  <meta property="og:description" content="Live mentorship. Funded accounts. Real results." />
-  <meta property="og:image" content="assets/logo-stacked-dark.png" />
-  <meta property="og:url" content="https://cmcapital.co" />
-  <link rel="icon" href="assets/logo-mark-dark.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C|M Capital Members Area</title>
+  <meta name="description" content="C|M Capital member access preview for Academy, Discord, Ebook, and free resources." />
+  <link rel="icon" href="../assets/logo-mark-dark.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-  <nav class="navbar">
-    <div class="container nav-content">
-      <a class="logo" href="#hero" aria-label="C|M Capital home">
-        <img src="assets/logo-nav.png" alt="C|M Capital" class="logo-img">
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#proof">Results</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#members">Members</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li class="nav-mobile-action"><a href="/api/auth/login">Log In</a></li>
-        <li class="nav-mobile-action"><a href="#services">Sign Up</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a href="/api/auth/login" class="login-btn">Log In</a>
-        <a href="#services" class="nav-btn">Sign Up</a>
-      </div>
-    </div>
-  </nav>
+<body class="portal-body">
+  <header class="portal-shell-header">
+    <a href="../index.html" class="portal-brand" aria-label="Back to C|M Capital home">
+      <img src="../assets/logo-nav.png" alt="C|M Capital">
+    </a>
+    <nav class="portal-topnav" aria-label="Member portal navigation">
+      <a href="#academy">Academy</a>
+      <a href="#ebook">Ebook</a>
+      <a href="#discord">Discord</a>
+      <a href="#free">Free</a>
+    </nav>
+    <a href="/api/auth/logout" class="portal-upgrade" id="portal-logout-link" hidden>Log Out</a>
+    <a href="/api/auth/login" class="portal-upgrade" id="portal-login-link">Log In</a>
+  </header>
 
-  <section id="hero" class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <span class="eyebrow">C|M Capital Trading Education</span>
-        <h1>Trading <span class="gradient-text">Made Simple.</span></h1>
-        <p>Build a cleaner process for the markets with live mentorship, funded-account guidance, and a strategy designed to make trading feel less chaotic.</p>
-        <div class="hero-actions">
-          <a href="#services" class="btn-primary">Sign Up</a>
-          <a href="/api/auth/login" class="btn-secondary">Member Login</a>
-        </div>
-        <div class="hero-trust">
-          <strong>£1.2M+ funded</strong>
-          <strong>9+ years</strong>
-          <strong>Live mentorship</strong>
-        </div>
+  <main class="portal-layout">
+    <aside class="portal-sidebar">
+      <p class="portal-label">Whop Access</p>
+      <h1>Members Area</h1>
+      <p id="portal-sidebar-copy">Sign in through Whop and this page will open the areas linked to your product access.</p>
+      <div class="portal-role-switcher" aria-label="Preview access level" hidden>
+        <button type="button" class="is-selected" data-role="academy">Academy</button>
+        <button type="button" data-role="ebook">Ebook</button>
+        <button type="button" data-role="discord">Discord</button>
+        <button type="button" data-role="free">Free</button>
       </div>
-      <div class="hero-right">
-        <div class="hero-terminal">
-          <div class="terminal-top">
-            <img src="assets/logo-terminal.png" alt="C|M Capital" class="terminal-logo">
-            <span>Member Access</span>
-          </div>
-          <div class="access-panel">
-            <div class="access-row is-active">
-              <span>Academy</span>
-              <strong>Course + Discord + Resources</strong>
-            </div>
-            <div class="access-row">
-              <span>Discord</span>
-              <strong>Community + Market Breakdowns</strong>
-            </div>
-            <div class="access-row">
-              <span>Ebook</span>
-              <strong>Included with Academy | £20 standalone</strong>
-            </div>
-            <div class="access-row">
-              <span>Free</span>
-              <strong>Starter Community</strong>
-            </div>
-          </div>
-          <div class="chart-panel portal-chart" aria-hidden="true">
-            <span style="height: 28%"></span>
-            <span style="height: 46%"></span>
-            <span style="height: 35%"></span>
-            <span style="height: 62%"></span>
-            <span style="height: 54%"></span>
-            <span style="height: 78%"></span>
-            <span style="height: 68%"></span>
-            <span style="height: 88%"></span>
-          </div>
-          <div class="terminal-footer">
-            <span>Risk-first education</span>
-            <span>Live breakdowns</span>
-          </div>
-        </div>
-        <img src="assets/logo-mark-dark.png" alt="" class="hero-watermark" aria-hidden="true">
+      <div class="portal-access-list">
+        <a href="#academy"><span>01</span> Academy Course</a>
+        <a href="#ebook"><span>02</span> Ebook Reader</a>
+        <a href="#discord"><span>03</span> Discord Hub</a>
+        <a href="#free"><span>04</span> Starter Access</a>
       </div>
-    </div>
-  </section>
+      <div class="portal-side-note">
+        <span>Next setup</span>
+        <p>Course videos and the protected ebook reader can be connected once the content host is chosen.</p>
+      </div>
+    </aside>
 
-  <section class="signal-strip" aria-label="C|M Capital trading education highlights">
-    <div class="container signal-grid">
-      <div><span>01</span><strong>Learn the full strategy</strong></div>
-      <div><span>02</span><strong>Join live market sessions</strong></div>
-      <div><span>03</span><strong>Build a funded-trader routine</strong></div>
-    </div>
-  </section>
-
-  <section id="proof" class="proof">
-    <div class="container">
-      <span class="section-kicker">Verified progress</span>
-      <h2 class="section-title">£1.2M+ Funded. Real Achievements.</h2>
-      <p class="proof-subtitle">Real Members, Real Achievements.</p>
-      <div class="certificates-grid">
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_e1417896304c4956a970305b742f949b~mv2.jpg" data-lightbox="proof" data-title="FTMO Verification"><img src="https://static.wixstatic.com/media/12b4e4_e1417896304c4956a970305b742f949b~mv2.jpg" alt="FTMO Verification"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_af89cdf33e094489925b03c1c34840d3~mv2.jpg" data-lightbox="proof" data-title="FTMO Challenge"><img src="https://static.wixstatic.com/media/12b4e4_af89cdf33e094489925b03c1c34840d3~mv2.jpg" alt="FTMO Challenge"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_b491c14f92e9499aa1f7ddf13540d034~mv2.png" data-lightbox="proof" data-title="Alpha"><img src="https://static.wixstatic.com/media/12b4e4_b491c14f92e9499aa1f7ddf13540d034~mv2.png" alt="Alpha"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_dbfcf0c37f68417fbc602f39824dcedd~mv2.png" data-lightbox="proof" data-title="E8"><img src="https://static.wixstatic.com/media/12b4e4_dbfcf0c37f68417fbc602f39824dcedd~mv2.png" alt="E8"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_911b5778fcf64243b6e887a0fd3acbe9~mv2.jpg" data-lightbox="proof" data-title="Skilled"><img src="https://static.wixstatic.com/media/12b4e4_911b5778fcf64243b6e887a0fd3acbe9~mv2.jpg" alt="Skilled"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_2cb5f54d4d69474cb97d117338f6e626~mv2.jpg" data-lightbox="proof" data-title="ThinkCapital Funded"><img src="https://static.wixstatic.com/media/12b4e4_2cb5f54d4d69474cb97d117338f6e626~mv2.jpg" alt="ThinkCapital Funded"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_65e0b459e53a41cd99a634537b96ced6~mv2.png" data-lightbox="proof" data-title="Skilled Phase 2"><img src="https://static.wixstatic.com/media/12b4e4_65e0b459e53a41cd99a634537b96ced6~mv2.png" alt="Skilled Phase 2"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_06692466dd7548918edb45f351cd4873~mv2.jpg" data-lightbox="proof" data-title="Topstep Funded"><img src="https://static.wixstatic.com/media/12b4e4_06692466dd7548918edb45f351cd4873~mv2.jpg" alt="Topstep Funded"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_3f2abed88b6144588541aa51b0d57181~mv2.jpg" data-lightbox="proof" data-title="Alpha Profit Split"><img src="https://static.wixstatic.com/media/12b4e4_3f2abed88b6144588541aa51b0d57181~mv2.jpg" alt="Alpha Profit Split"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_bcabf772ca8643dc823edd0024297e35~mv2.jpg" data-lightbox="proof" data-title="Alpha Funded Trader"><img src="https://static.wixstatic.com/media/12b4e4_bcabf772ca8643dc823edd0024297e35~mv2.jpg" alt="Alpha Funded Trader"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_582b4f75664f4051b3f0eda8b9ce3d25~mv2.jpg" data-lightbox="proof" data-title="Royal Challenge Funded"><img src="https://static.wixstatic.com/media/12b4e4_582b4f75664f4051b3f0eda8b9ce3d25~mv2.jpg" alt="Royal Challenge Funded"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_2be69b20c9bc46779ba161b82480376c~mv2.jpg" data-lightbox="proof" data-title="Equity Edge Evaluation"><img src="https://static.wixstatic.com/media/12b4e4_2be69b20c9bc46779ba161b82480376c~mv2.jpg" alt="Equity Edge Evaluation"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_3b68e37e5990472d8f9543b2bd538611~mv2.jpg" data-lightbox="proof" data-title="Funded Trader $25K"><img src="https://static.wixstatic.com/media/12b4e4_3b68e37e5990472d8f9543b2bd538611~mv2.jpg" alt="Funded Trader $25K"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_d21b482038c84461b9a18f4f8c573eab~mv2.png" data-lightbox="proof" data-title="QT Funded $100K"><img src="https://static.wixstatic.com/media/12b4e4_d21b482038c84461b9a18f4f8c573eab~mv2.png" alt="QT Funded $100K"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_6346a190fcfa47949b066a9511353f56~mv2.jpg" data-lightbox="proof" data-title="Funded Trader Proof"><img src="https://static.wixstatic.com/media/12b4e4_6346a190fcfa47949b066a9511353f56~mv2.jpg" alt="Funded Trader Proof"><span class="cert-glow"></span></a>
-        <a class="cert-card" href="https://static.wixstatic.com/media/12b4e4_2991ce1c50b240f79df9163320932eb6~mv2.jpg" data-lightbox="proof" data-title="Funded Account Proof"><img src="https://static.wixstatic.com/media/12b4e4_2991ce1c50b240f79df9163320932eb6~mv2.jpg" alt="Funded Account Proof"><span class="cert-glow"></span></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container about-grid">
-      <div class="about-text">
-        <span class="section-kicker">The edge</span>
-        <h3>C|M Capital</h3>
-        <h4>Where Trading Meets A Simplified Edge.</h4>
-        <p>Founded by <strong>Steve Cutmore</strong> — <strong>9+ years mastering markets</strong>. Now teaching traders to get <strong>funded</strong>.</p>
-        <p>At C|M Capital, we are committed to providing the <strong>highest quality trading education and support</strong>. We believe that trading should be <strong>accessible to everyone</strong>, regardless of experience level.</p>
-        <p>That’s why our programs cater to <strong>both beginners and seasoned traders</strong>. Our team of experts is dedicated to helping you achieve your trading goals and become a <strong>successful, funded trader</strong>.</p>
-        <p>We pride ourselves on our <strong>innovative approach</strong>: combining <strong>cutting-edge strategies</strong> with <strong>hands-on mentorship</strong> to give you the tools to dominate the markets.</p>
-        <p class="about-cta">Join us at C|M Capital and <strong>start your journey to trading excellence today</strong>.</p>
-        <div class="social-icons">
-          <a href="https://x.com/LordCutmore" target="_blank" rel="noopener" aria-label="X (Twitter)" class="social-link"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://www.youtube.com/@CMCapitalSteve" target="_blank" rel="noopener" aria-label="YouTube - C|M Capital" class="social-link"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.youtube.com/@SteveCutmore" target="_blank" rel="noopener" aria-label="YouTube - Steve Cutmore" class="social-link"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/cm_capital1/" target="_blank" rel="noopener" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-      <div class="about-img">
-        <img src="assets/logo-stacked-dark.png" alt="C|M Logo">
-      </div>
-    </div>
-  </section>
-
-  <section id="services" class="services">
-    <div class="container">
-      <span class="section-kicker">Your next move</span>
-      <h2 class="section-title">Choose Your Path</h2>
-      <p class="section-intro">Every product leads into the same clean member system. Whop handles the purchase, your access level decides what opens inside.</p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="card-icon-circle"><img src="https://static.wixstatic.com/media/12b4e4_d2369c2d73ae47ee8c82baf05413bcec~mv2.jpg" alt="Academy" class="card-icon-img"></div>
-          <h3>Academy</h3>
-          <ul class="service-list">
-            <li>Full Strategy | Swing & Day Trading</li><li>Live Webinars</li><li>Lifetime Access To Discord Community</li><li>24/7 Support</li><li>C|M Team Resources</li><li>Private Academy & Crypto Community</li><li>Traders Recap Videos</li>
-          </ul>
-          <a href="https://whop.com/checkout/plan_ubTXAZqwcYjle" class="btn-card" target="_blank" rel="noopener">Join Academy £500</a>
-          <div class="price-box"><p class="price-sub">One-Time Fee</p></div>
-          <span class="lifetime-badge">LIFETIME ACCESS</span>
-        </div>
-        <div class="service-card ebook-card">
-          <span class="badge badge-ebook">Included In Academy</span>
-          <div class="ebook-cover-wrap"><span class="ebook-shine" aria-hidden="true"></span><img src="assets/ebook-cover.png" alt="CM Capital Strategy Ebook cover"></div>
-          <h3>Strategy Ebook</h3>
-          <ul class="service-list">
-            <li>C|M Strategy Ebook</li><li>Included for Academy members</li><li>£20 lifetime access</li><li>Member-area reader access</li>
-          </ul>
-          <a href="https://whop.com/checkout/plan_Tot7zhkOdHlPX" class="btn-card" target="_blank" rel="noopener" data-whop-product="ebook">Buy Ebook £20</a>
-          <div class="price-box"><p class="price-sub">Academy Members Get This Included</p></div>
-        </div>
-        <div class="service-card best-seller">
-          <span class="badge">Most Popular</span>
-          <div class="card-icon-circle"><img src="https://static.wixstatic.com/media/12b4e4_b20c8b9b5b5c4fd4a138de349d25d3da~mv2.png" alt="Discord" class="card-icon-img"></div>
-          <h3>Discord Community</h3>
-          <ul class="service-list">
-            <li>Weekly Market Breakdowns & Updates</li><li>Community Trade Ideas</li><li>Accountability (Wins & Loss Channels)</li><li>Live Mentors Charts & Updates</li><li>A FREE Trading Journal</li><li>Full C|M Community Chat</li>
-          </ul>
-          <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" class="btn-card" target="_blank" rel="noopener">Join Discord £15/mo</a>
-        </div>
-        <div class="service-card">
-          <span class="badge badge-free">FREE</span>
-          <div class="card-icon-circle"><img src="https://static.wixstatic.com/media/12b4e4_b20c8b9b5b5c4fd4a138de349d25d3da~mv2.png" alt="Free Community" class="card-icon-img"></div>
-          <h3>Free Community</h3>
-          <ul class="service-list">
-            <li>General Chat</li><li>Profits & Losses Sharing</li><li>Trade Ideas Channel</li><li>Economic Calendar</li><li>Recommended Brokers</li><li>Prop Firms List</li><li>Exclusive Prop Firm Discounts</li><li>Mentor Charts</li>
-          </ul>
-          <a href="https://whop.com/checkout/plan_aQADfPZUcDxqJ" class="btn-card" target="_blank" rel="noopener">Join Free Discord</a>
-          <div class="price-box"><p class="price-sub">Free Forever</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="members" class="members">
-    <div class="container">
-      <div class="members-head">
+    <section class="portal-main">
+      <section class="portal-hero-card">
         <div>
-          <span class="section-kicker">Members area</span>
-          <h2 class="section-title">One Login. The Right Access.</h2>
-        </div>
-        <div class="members-copy">
-          <p>Members log in through Whop. Academy members get the ebook included, while non-Academy buyers can unlock the ebook reader for £20.</p>
-          <div class="members-actions">
-            <a href="/api/auth/login" class="btn-primary">Member Login</a>
-            <a href="#services" class="btn-secondary">Choose Access</a>
+          <span class="section-kicker">Member hub</span>
+          <h2>Your trading workspace.</h2>
+          <p id="portal-hero-copy">Checking your Whop access so the right member areas can open.</p>
+          <div class="portal-auth-actions" id="portal-auth-actions" hidden>
+            <a href="/api/auth/login" class="btn-primary">Log In With Whop</a>
+            <a href="../index.html#services" class="btn-secondary">Choose Access</a>
           </div>
         </div>
-      </div>
-      <div class="access-steps">
-        <article><span>01</span><h3>Buy Through Whop</h3><p>Your existing Whop products stay in charge of payments, Discord access, and customer records.</p></article>
-        <article><span>02</span><h3>Log Into Members</h3><p>The website member area becomes the clean home for course videos, ebook access, and resources.</p></article>
-        <article><span>03</span><h3>Show The Right Content</h3><p>Academy, ebook, paid Discord, and free members each see only the areas linked to their access.</p></article>
-      </div>
-      <div class="portal-grid">
-        <article class="portal-card">
-          <span class="portal-tag">Ebook</span>
-          <h3>Ebook Reader</h3>
-          <p>Included for Academy members, or unlocked separately for £20. Built for viewing inside the member area rather than handing out a raw file.</p>
-        </article>
-        <article class="portal-card">
+        <div class="portal-status">
+          <span id="portal-status-kicker">Checking</span>
+          <strong id="portal-access-label">Loading member access...</strong>
+        </div>
+      </section>
+
+      <section id="academy" class="portal-section" data-access="academy">
+        <div class="portal-section-head">
           <span class="portal-tag">Academy</span>
-          <h3>Course Library</h3>
-          <p>Structured lesson areas for Academy members, with course videos, recaps, and resources in one clean place.</p>
-        </article>
-        <article class="portal-card">
+          <h2>Course Library</h2>
+          <p>Your Academy area for the core framework, implementation sessions, and ongoing recap library.</p>
+        </div>
+        <div class="lesson-grid">
+          <article class="lesson-card">
+            <span>Module 01</span>
+            <h3>Foundation</h3>
+            <p>Market structure, routine, risk, and setup rules.</p>
+            <div class="video-slot"><strong>Pending video host</strong><small>YouTube/Vimeo embed slot</small></div>
+          </article>
+          <article class="lesson-card">
+            <span>Module 02</span>
+            <h3>Strategy</h3>
+            <p>Swing and day-trading framework with clean execution steps.</p>
+            <div class="video-slot"><strong>Pending video host</strong><small>Private lesson embed slot</small></div>
+          </article>
+          <article class="lesson-card">
+            <span>Module 03</span>
+            <h3>Recaps</h3>
+            <p>Trade breakdowns, mistakes, wins, and live-session follow-ups.</p>
+            <div class="video-slot"><strong>Pending video host</strong><small>Recap library slot</small></div>
+          </article>
+        </div>
+        <div class="academy-next">
+          <span>Planned academy flow</span>
+          <p>Foundation first, then strategy execution, then recap study. This keeps the member area simple while the video library is being connected.</p>
+        </div>
+      </section>
+
+      <section id="ebook" class="portal-section" data-access="academy ebook">
+        <div class="portal-section-head">
+          <span class="portal-tag">Ebook</span>
+          <h2>Ebook Reader</h2>
+          <p>Included for Academy members, or unlocked separately for £20. The final version will be viewed here rather than handed out as a raw download.</p>
+        </div>
+        <div class="reader-preview">
+          <div class="ebook-preview-cover">
+            <img src="../assets/ebook-cover.png" alt="C|M Strategy Ebook cover">
+          </div>
+          <div class="reader-page">
+            <span class="reader-watermark" id="reader-watermark">Whop access required</span>
+            <span>C|M Strategy Ebook</span>
+            <h3>Trading Framework</h3>
+            <p>Build a repeatable process before scaling capital: structure, execution rules, trade management, and review.</p>
+            <div class="reader-meta">
+              <strong>Protected reader planned</strong>
+              <small>Watermarked access tied to the logged-in Whop member.</small>
+            </div>
+          </div>
+          <div class="reader-controls">
+            <button type="button" disabled>Previous</button>
+            <button type="button" disabled>Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="discord" class="portal-section" data-access="academy discord">
+        <div class="portal-section-head">
           <span class="portal-tag">Discord</span>
-          <h3>Discord Community</h3>
-          <p>Community resources stay inside Discord. Members use the portal to open the right Whop-managed Discord access.</p>
-        </article>
-        <article class="portal-card">
+          <h2>Discord Community</h2>
+          <p>Trading journal, weekly breakdowns, mentor charts, trade ideas, broker resources, and market notes live inside the dedicated Discord channels.</p>
+        </div>
+        <div class="discord-open-card">
+          <div>
+            <span>Community Access</span>
+            <h3>Open Discord</h3>
+            <p>Use Discord as the home for community resources and live updates.</p>
+          </div>
+          <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" target="_blank" rel="noopener" id="discord-access-link">Open Discord</a>
+        </div>
+        <div class="portal-mini-grid">
+          <article><span>Breakdowns</span><p>Weekly market prep and mentor chart updates.</p></article>
+          <article><span>Journal</span><p>Trading journal and accountability channels.</p></article>
+          <article><span>Community</span><p>Trade ideas, chat, broker notes, and firm resources.</p></article>
+        </div>
+      </section>
+
+      <section id="free" class="portal-section" data-access="academy ebook discord free">
+        <div class="portal-section-head">
           <span class="portal-tag">Free</span>
-          <h3>Starter Access</h3>
-          <p>Free members get the basic community entry points without seeing the paid Academy or ebook areas.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq" class="faq">
-    <div class="container faq-grid">
-      <div>
-        <span class="section-kicker">Quick answers</span>
-        <h2 class="section-title">Before You Join</h2>
-      </div>
-      <div class="faq-list">
-        <details open>
-          <summary>Is the ebook included with Academy?</summary>
-          <p>Yes. Academy members get the Strategy Ebook included. Non-Academy members can buy standalone access for £20.</p>
-        </details>
-        <details>
-          <summary>Where do members log in?</summary>
-          <p>Members log in with Whop. Once signed in, the portal checks the member's Whop access and opens the right Academy, Discord, Ebook, or Free area.</p>
-        </details>
-        <details>
-          <summary>Can course videos be watched on the site?</summary>
-          <p>Yes. The member area is designed for embedded course lessons. We can use YouTube unlisted embeds short-term, then upgrade to Vimeo, Bunny, or VdoCipher later.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section id="reviews" class="reviews">
-    <div class="container">
-      <span class="section-kicker">Trader feedback</span>
-      <h2 class="section-title">What Our Traders Say</h2>
-    </div>
-    <div class="reviews-track" aria-label="Trader reviews">
-      <div class="reviews-slider">
-        <article class="review-card"><p class="review-text">"After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."</p><p class="review-author">- Dal</p></article>
-        <article class="review-card"><p class="review-text">"I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"</p><p class="review-author">- Leahy</p></article>
-        <article class="review-card"><p class="review-text">"Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."</p><p class="review-author">- Mo</p></article>
-        <article class="review-card"><p class="review-text">"I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."</p><p class="review-author">- JP</p></article>
-        <article class="review-card"><p class="review-text">"I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"</p><p class="review-author">- Jonathon</p></article>
-        <article class="review-card"><p class="review-text">"After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."</p><p class="review-author">- Dal</p></article>
-        <article class="review-card"><p class="review-text">"I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"</p><p class="review-author">- Leahy</p></article>
-        <article class="review-card"><p class="review-text">"Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."</p><p class="review-author">- Mo</p></article>
-        <article class="review-card"><p class="review-text">"I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."</p><p class="review-author">- JP</p></article>
-        <article class="review-card"><p class="review-text">"I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"</p><p class="review-author">- Jonathon</p></article>
-        <article class="review-card"><p class="review-text">"After trying tons of courses over the years, this is by far the best one I've found. The content is simple, clear, and actually works for me."</p><p class="review-author">- Dal</p></article>
-        <article class="review-card"><p class="review-text">"I'm so grateful to be part of this amazing community. The course, the support, and the people here are on another level — highly recommend!"</p><p class="review-author">- Leahy</p></article>
-        <article class="review-card"><p class="review-text">"Solid course with simple day-to-day setups that finally click. The homework reviews really help build a strong foundation. Best community out there."</p><p class="review-author">- Mo</p></article>
-        <article class="review-card"><p class="review-text">"I kept going back to your videos — that's what really helped me. You've been relentless for about 6 months and it's paid off big time for me."</p><p class="review-author">- JP</p></article>
-        <article class="review-card"><p class="review-text">"I watched a few of your trade breakdowns to see how you spotted those really intricate entries. That’s when I realised what I was missing with S&D — massive help, thanks mate!"</p><p class="review-author">- Jonathon</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="container contact-grid">
-      <form class="contact-form" action="https://formspree.io/f/mgvpndok" method="POST">
-        <input type="text" name="first_name" placeholder="First Name" required>
-        <input type="text" name="last_name" placeholder="Last Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
-        <input type="hidden" name="_next" value="#contact">
-        <textarea name="message" rows="4" placeholder="I'm ready..." required></textarea>
-        <button type="submit" class="btn-submit">Send Message</button>
-      </form>
-      <div class="form-success" id="form-success" style="display: none;">
-        <p>Message Sent! We’ll reply within 24 hours.</p>
-      </div>
-      <div class="contact-text">
-        <span class="section-kicker">Start here</span>
-        <h2>Get in Touch</h2>
-        <p>One message. One step closer to funded.</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container footer-grid">
-      <div class="footer-left">
-        <p>© 2025 C|M Capital. Built for traders. By traders.</p>
-        <p class="mission">Our mission: Fund 1,000 traders by 2027.</p>
-      </div>
-      <div class="footer-right">
-        <div class="trust-seal">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="white"/>
-          </svg>
-          <span>Access managed via Whop</span>
+          <h2>Starter Access</h2>
+          <p>Starter links for free members and clean upgrade routes when they are ready for more structure.</p>
         </div>
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#members">Members</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
+        <div class="resource-list">
+          <a href="https://whop.com/checkout/plan_aQADfPZUcDxqJ" target="_blank" rel="noopener">Join Free Discord</a>
+          <a href="../index.html#services">View Paid Access</a>
         </div>
-      </div>
-    </div>
-    <div class="container footer-disclaimer">
-      <p>C|M Capital provides trading education only. Nothing on this website is financial advice, investment advice, or a guarantee of results. Trading involves risk and you should only trade with money you can afford to lose.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script src="script.js"></script>
+      </section>
+    </section>
+  </main>
+  <script src="../script.js"></script>
 </body>
 </html>
