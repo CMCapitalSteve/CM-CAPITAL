@@ -38,10 +38,14 @@
         <button type="button" data-role="free">Free</button>
       </div>
       <div class="portal-access-list">
-        <a href="#academy">Academy Course</a>
-        <a href="#ebook">Ebook Reader</a>
-        <a href="#discord">Discord Resources</a>
-        <a href="#free">Starter Access</a>
+        <a href="#academy"><span>01</span> Academy Course</a>
+        <a href="#ebook"><span>02</span> Ebook Reader</a>
+        <a href="#discord"><span>03</span> Discord Hub</a>
+        <a href="#free"><span>04</span> Starter Access</a>
+      </div>
+      <div class="portal-side-note">
+        <span>Next setup</span>
+        <p>Course videos and the protected ebook reader can be connected once the content host is chosen.</p>
       </div>
     </aside>
 
@@ -66,12 +70,31 @@
         <div class="portal-section-head">
           <span class="portal-tag">Academy</span>
           <h2>Course Library</h2>
-          <p>For Academy members. This is where your private course videos and recaps would sit.</p>
+          <p>Your Academy area for the core framework, implementation sessions, and ongoing recap library.</p>
         </div>
         <div class="lesson-grid">
-          <article class="lesson-card"><span>Module 01</span><h3>Foundation</h3><p>Market structure, routine, risk, and setup rules.</p><div class="video-slot">Video Embed</div></article>
-          <article class="lesson-card"><span>Module 02</span><h3>Strategy</h3><p>Swing and day-trading framework with clean execution steps.</p><div class="video-slot">Video Embed</div></article>
-          <article class="lesson-card"><span>Module 03</span><h3>Recaps</h3><p>Trade breakdowns, mistakes, wins, and live-session follow-ups.</p><div class="video-slot">Video Embed</div></article>
+          <article class="lesson-card">
+            <span>Module 01</span>
+            <h3>Foundation</h3>
+            <p>Market structure, routine, risk, and setup rules.</p>
+            <div class="video-slot"><strong>Pending video host</strong><small>YouTube/Vimeo embed slot</small></div>
+          </article>
+          <article class="lesson-card">
+            <span>Module 02</span>
+            <h3>Strategy</h3>
+            <p>Swing and day-trading framework with clean execution steps.</p>
+            <div class="video-slot"><strong>Pending video host</strong><small>Private lesson embed slot</small></div>
+          </article>
+          <article class="lesson-card">
+            <span>Module 03</span>
+            <h3>Recaps</h3>
+            <p>Trade breakdowns, mistakes, wins, and live-session follow-ups.</p>
+            <div class="video-slot"><strong>Pending video host</strong><small>Recap library slot</small></div>
+          </article>
+        </div>
+        <div class="academy-next">
+          <span>Planned academy flow</span>
+          <p>Foundation first, then strategy execution, then recap study. This keeps the member area simple while the video library is being connected.</p>
         </div>
       </section>
 
@@ -79,7 +102,7 @@
         <div class="portal-section-head">
           <span class="portal-tag">Ebook</span>
           <h2>Ebook Reader</h2>
-          <p>Included for Academy members, or unlocked separately for £20. Later this can become a protected online reader rather than a downloadable PDF.</p>
+          <p>Included for Academy members, or unlocked separately for £20. The final version will be viewed here rather than handed out as a raw download.</p>
         </div>
         <div class="reader-preview">
           <div class="ebook-preview-cover">
@@ -88,12 +111,16 @@
           <div class="reader-page">
             <span class="reader-watermark" id="reader-watermark">Whop access required</span>
             <span>C|M Strategy Ebook</span>
-            <h3>Chapter 01</h3>
-            <p>Build a repeatable trading process before you ever think about scaling capital.</p>
+            <h3>Trading Framework</h3>
+            <p>Build a repeatable process before scaling capital: structure, execution rules, trade management, and review.</p>
+            <div class="reader-meta">
+              <strong>Protected reader planned</strong>
+              <small>Watermarked access tied to the logged-in Whop member.</small>
+            </div>
           </div>
           <div class="reader-controls">
-            <button type="button">Previous</button>
-            <button type="button">Next</button>
+            <button type="button" disabled>Previous</button>
+            <button type="button" disabled>Next</button>
           </div>
         </div>
       </section>
@@ -112,13 +139,18 @@
           </div>
           <a href="https://whop.com/checkout/plan_9veu1Ojz0m4vs" target="_blank" rel="noopener" id="discord-access-link">Open Discord</a>
         </div>
+        <div class="portal-mini-grid">
+          <article><span>Breakdowns</span><p>Weekly market prep and mentor chart updates.</p></article>
+          <article><span>Journal</span><p>Trading journal and accountability channels.</p></article>
+          <article><span>Community</span><p>Trade ideas, chat, broker notes, and firm resources.</p></article>
+        </div>
       </section>
 
       <section id="free" class="portal-section" data-access="academy ebook discord free">
         <div class="portal-section-head">
           <span class="portal-tag">Free</span>
           <h2>Starter Access</h2>
-          <p>For free members. A simple area for starter links and community entry points.</p>
+          <p>Starter links for free members and clean upgrade routes when they are ready for more structure.</p>
         </div>
         <div class="resource-list">
           <a href="https://whop.com/checkout/plan_aQADfPZUcDxqJ" target="_blank" rel="noopener">Join Free Discord</a>
