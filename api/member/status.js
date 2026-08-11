@@ -43,6 +43,10 @@ module.exports = async function handler(req, res) {
       rawAccess: { academy, paidDiscord, free, ebook },
       missing: {
         ebookProductId: !PRODUCTS.ebook
+      },
+      config: {
+        ebookProductLoaded: Boolean(PRODUCTS.ebook),
+        ebookProductSource: process.env.WHOP_PRODUCT_EBOOK ? "vercel" : "code_fallback"
       }
     });
   } catch (error) {
